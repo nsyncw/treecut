@@ -17,7 +17,7 @@ typedef
    cType cap;
    cType w; /*weight*/
    cType avgCV; /*average CV of cut set where this edge belongs to */
-   cType tmp;
+   long tmp;
 
    struct edgeProp* rev; //reverse
 

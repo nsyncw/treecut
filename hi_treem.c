@@ -225,7 +225,7 @@ void deOrderEdgeByRandomCap(nodeP *np)
 
   for (int i = 0; i < cnt; i++)
   {
-    pedges[i].tmp = mrand() % pedges[i].cap;
+    pedges[i].tmp = -1*mrand() % pedges[i].cap;
   }
 
     assert(cnt<4 || idxs[2]!=idxs[3]);
