@@ -63,23 +63,3 @@ struct NodePropArr_{
    
 } NodePropArr;
 
-
-// typedef  /* arc */
-//    struct arcSt
-// {
-//    cType           resCap;          /* residual capasity */
-//    struct nodeSt   *head;           /* arc head */
-//    struct arcSt    *rev;            /* reverse arc */
-// }
-//   arc;
-
-
-
-
-// typedef /* bucket */
-//    struct bucketSt
-// {
-//   node             *firstActive;      /* first node with positive excess */
-//   node             *firstInactive;    /* first node with zero excess */
-// } bucket;
-

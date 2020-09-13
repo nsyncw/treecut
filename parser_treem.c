@@ -1,32 +1,3 @@
-/*
-  parse (...) :
-       1. Reads maximal flow problem in extended DIMACS format.
-       2. Prepares internal data representation.
-       
-   types: 'arc' and 'node' must be predefined
-
-   type arc  must contain fields 'head', 'rev', 'resCap'
-
-   typedef 
-     struct arcSt
-       {
-         long             resCap;     .. residual capasity
-         struct nodeSt   *head;     .. head node 
-         struct arcSt    *rev;   .. opposite arc 
-         ..................
-       }
-   arc;
-
-   type   node   must contain the field 'first': 
-
-   typedef
-     struct nodeSt
-       {
-          arcSt        *first;    ..  first outgoing arc 
-          ....................
-       }
-    node;
-*/
 
 void adjustEdgesIfNecessary(nodeP* np){
     if(np->edges == NULL || np->nIdx >= np->maxEdges){
